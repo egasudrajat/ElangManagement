@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/seting"
+        android:title="Setting"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/finance_app"
+        android:title="Finance App"
+        android:icon="@drawable/ic_monetization_on_black_24dp"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/generate_xls"
+        android:title="Generate Excel"
+        app:showAsAction="never"/>
+</menu>

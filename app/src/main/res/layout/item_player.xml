@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    style="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="6dp"
+
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/img_profil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/img_profil"
+            android:text="Nama"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img_profil"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/img_profil"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu2"
+            app:layout_constraintTop_toTopOf="@+id/tv_nama2"
+            tools:text="nama" />
+
+        <TextView
+            android:id="@+id/tv_ttl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/img_profil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu2"
+            app:layout_constraintTop_toTopOf="@+id/tv_tttt"
+            tools:text="Nama" />
+
+        <TextView
+            android:id="@+id/tv_status2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_profil"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Status"
+            app:layout_constraintStart_toEndOf="@+id/img_profil"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ttl" />
+
+        <TextView
+            android:id="@+id/tv_tttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_profil"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="TTL"
+            app:layout_constraintStart_toEndOf="@+id/img_profil"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_profil"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu3"
+            app:layout_constraintTop_toTopOf="@+id/tv_status2"
+            tools:text="Status" />
+
+        <TextView
+            android:id="@+id/tv_waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="No. Telp"
+            app:layout_constraintStart_toEndOf="@+id/img_profil"
+            app:layout_constraintTop_toBottomOf="@+id/tv_status" />
+
+        <TextView
+            android:id="@+id/tv_notelp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu4"
+            app:layout_constraintTop_toTopOf="@+id/tv_waktu"
+            tools:text="No. Telp" />
+
+        <TextView
+            android:id="@+id/tv_waktu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text=":"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu"
+            app:layout_constraintTop_toTopOf="@+id/tv_nama" />
+
+        <TextView
+            android:id="@+id/tv_waktu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text=":"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu"
+            app:layout_constraintTop_toTopOf="@+id/tv_status2" />
+
+        <TextView
+            android:id="@+id/tv_waktu7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text=":"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu"
+            app:layout_constraintTop_toTopOf="@+id/tv_tttt" />
+
+        <TextView
+            android:id="@+id/tv_waktu4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text=":"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu"
+            app:layout_constraintTop_toTopOf="@+id/tv_waktu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

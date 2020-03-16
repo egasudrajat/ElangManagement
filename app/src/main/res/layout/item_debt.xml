@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cddebt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="16dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/tv_nama2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/img_profil"
+            android:text="Nama"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/img_profil"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Nama" />
+
+        <TextView
+            android:id="@+id/tv_total_pnjmn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_profil"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Total Pinjam"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+        <TextView
+            android:id="@+id/tv_total_pnjmn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_profil"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+            tools:text="30000" />
+
+        <TextView
+            android:id="@+id/tv_waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="jmlh bayar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total_pnjmn" />
+
+        <TextView
+            android:id="@+id/tv_waktu5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Sisa hutang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_waktu" />
+
+        <TextView
+            android:id="@+id/tv_progres_bayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_total_pnjmn"
+            tools:text="20000" />
+
+        <TextView
+            android:id="@+id/tv_sisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_waktu4"
+            app:layout_constraintTop_toTopOf="@+id/tv_waktu6"
+            tools:text="20000" />
+
+        <TextView
+            android:id="@+id/tv_tgl_pinjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="tgl pinjam" />
+
+        <TextView
+            android:id="@+id/tv_waktu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text=":"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_pnjmn2"
+            app:layout_constraintTop_toTopOf="@+id/tv_nama" />
+
+        <TextView
+            android:id="@+id/tv_waktu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text=":"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_pnjmn2"
+            app:layout_constraintTop_toTopOf="@+id/tv_total_pnjmn" />
+
+        <TextView
+            android:id="@+id/tv_waktu4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text=":"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_pnjmn2"
+            app:layout_constraintTop_toTopOf="@+id/tv_waktu" />
+
+        <TextView
+            android:id="@+id/tv_waktu6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text=":"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_total_pnjmn2"
+            app:layout_constraintTop_toTopOf="@+id/tv_waktu5" />
+
+        <Button
+            android:id="@+id/bt_sejarah_bayar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="Sejarah bayar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_bayar" />
+
+        <Button
+            android:id="@+id/bt_bayar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="Bayar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/bt_cttn"
+            app:layout_constraintTop_toBottomOf="@+id/bt_cttn" />
+
+        <Button
+            android:id="@+id/bt_cttn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:text="Catatan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tgl_pinjam"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
